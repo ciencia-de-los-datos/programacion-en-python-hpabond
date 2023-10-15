@@ -12,16 +12,13 @@ Utilice el archivo `data.csv` para resolver las preguntas.
 
 """
 
-
 def pregunta_01():
-    """
-    Retorne la suma de la segunda columna.
-
-    Rta/
-    214
-
-    """
-    return
+    with open('data.csv', 'r') as file:
+        suma_segunda_columna = 0
+        for line in file:
+            campos = line.split('\t')
+            suma_segunda_columna += int(campos[1])
+    return suma_segunda_columna
 
 
 def pregunta_02():
