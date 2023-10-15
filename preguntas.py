@@ -16,7 +16,7 @@ def pregunta_01():
         suma_segunda_columna = 0
         for line in file:
             campos = line.split('\t')
-            suma_segunda_columna += int(campos[1])
+            suma_segunda_columna += int(campos[2])
     return suma_segunda_columna
 
 
